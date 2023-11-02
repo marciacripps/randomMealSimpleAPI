@@ -1,0 +1,119 @@
+/******************************************
+/* CSS
+/*******************************************/
+
+/* Box Model Hack */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+/* Reset link styles */
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+/******************************************
+/* TYPOGRAPHY
+/*******************************************/
+
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; /* A more modern font */
+  color: #333; /* Dark grey for text for readability */
+  line-height: 1.6; /* More readable line height */
+  background: #f4f4f4; /* Light grey background */
+  padding: 20px; /* Padding to prevent content from hugging the edges */
+}
+
+h1, h2, h3, h4, h5, h6 {
+  margin-bottom: 0.5em; /* Spacing after headings */
+}
+
+h1 {
+  font-size: 2.5em; /* Larger size for h1 */
+  color: #444; /* Slightly darker color for headings */
+}
+
+h2 {
+  font-size: 2em;
+  color: #555;
+}
+
+/* You can continue the pattern for h3, h4, h5, h6... */
+
+/******************************************
+/* LAYOUT
+/*******************************************/
+
+img {
+  max-width: 100%; /* Make sure images are responsive */
+  height: auto;
+  display: block;
+  margin: 20px auto; /* Add margin to images for spacing */
+  border-radius: 10px; /* Optional: Rounded corners for images */
+}
+
+/* Navigation Styles */
+nav {
+  background: #333; /* Dark background for navbar */
+  color: #fff;
+  padding: 10px; /* Padding to increase clickable area */
+  border-radius: 5px; /* Rounded corners for nav */
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  justify-content: center; /* Center nav items horizontally */
+}
+
+nav ul li {
+  margin: 0 10px;
+}
+
+nav ul li a {
+  color: #fff; /* White text for links */
+  font-weight: bold;
+}
+
+/* Button Styles */
+button {
+  background: #5cb85c; /* Bootstrap 'success' green */
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  margin: 10px;
+  border-radius: 5px; /* Rounded corners for buttons */
+  cursor: pointer;
+  transition: background 0.3s ease; /* Smooth background color change on hover */
+}
+
+button:hover {
+  background: #4cae4c; /* Darker shade of green for hover state */
+}
+
+/******************************************
+/* ADDITIONAL STYLES
+/*******************************************/
+
+/* Container for centering the content */
+.container {
+  width: 80%;
+  margin: auto; /* Center the container */
+  overflow: auto; /* Clearfix for floated child elements */
+}
+
+/* Footer Styles */
+footer {
+  background: #333;
+  color: #fff;
+  text-align: center;
+  padding: 20px 0;
+  margin-top: 40px; /* Push footer to the bottom of content */
+}
+
+footer p {
+  margin: 0;
+}
